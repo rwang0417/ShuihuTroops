@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NPCCharacters>
+
+  <!-- 梁山新丁 -->
+
+  <NPCCharacter id="ls_xinding" 
+                default_group="Infantry" 
+                name="{=troop_lsxd}Liangshan Recruit" 
+                level="6" 
+                occupation="Soldier" 
+                civilianTemplate="NPCCharacter.empire_troop_civilian_template_t1"
+                is_basic_troop = "true"
+                culture="Culture.empire">
+    <face>
+      <BodyProperties version="4" age="19" weight="0.1349" build="0.2423" key="00050004402C0312367324453354621232316505203133023641312273143224018426140896594500000000000000000000000000000000000000001D043002" />
+      <BodyPropertiesMax version="4" age="21" weight="0.5818" build="0.6065" key="001CFC0CC02C3959AD8AA89C9A86CDEC9FCA8BBC8AA4CD775DACED6B7E2F8D4804E996460ECADBC9000000000000000000000000000000000000000067D48105" />
+      <!--hair_tags>
+        <hair_tag name="Native Braids" />
+      </hair_tags>
+      <beard_tags>
+        <beard_tag name="Cleanshaven" />
+      </beard_tags-->
+    </face>
+    <skills>
+      <skill id="Athletics" value="60" />
+      <skill id="Bow" value="30" />
+      <skill id="OneHanded" value="60" />
+      <skill id="Polearm" value="60" />
+      <skill id="Riding" value="10" />
+      <skill id="Throwing" value="30" />
+      <skill id="TwoHanded" value="50" />
+      <skill id="Crossbow" value="0" />
+    </skills>
+    <equipmentSet civilian="true">
+      <equipment slot="Item0" id="Item.peasant_2haxe_1_t1" />
+      <equipment slot="Item2" id="Item.throwing_stone" />
+      <equipment slot="Body" id="Item.bandit_envelope_dress_v1" />
+      <equipment slot="Leg" id="Item.wrapped_shoes" />
+      <equipment slot="Gloves" id="Item.armwraps" />
+      <equipment slot="Cape" id="Item.hood" />
+      <equipment slot="Head" id="Item.battania_civil_hood" />
+    </equipmentSet>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.ls_yishi" />
+    </upgrade_targets>
+  </NPCCharacter>
+
+  <!-- 梁山义士 -->
+
+  <NPCCharacter id="ls_yishi" 
+                default_group="Infantry" 
+                name="{=troop_lsys}Liangshan Righteous" 
+                level="11" 
+                occupation="Soldier" 
+                civilianTemplate="NPCCharacter.empire_troop_civilian_template_t1"
+                is_basic_troop = "false"
+                culture="Culture.empire">
+    <face>
+      <BodyProperties version="4" age="21.33" weight="0.4454" build="0.445" key="00050004402C0312367324453354621232316505203133023641312273143224028A86240896594500000000000000000000000000000000000000001D043002" />
+      <BodyPropertiesMax version="4" age="35.09" weight="0.6244" build="0.6336" key="001CFC0CC02C3959AD8AA89C9A86CDEC9FCA8BBC8AA4CD775DACED6B7E2F8D4807EEE6780ECADBC9000000000000000000000000000000000000000067D48105" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="90" />
+      <skill id="Bow" value="50" />
+      <skill id="OneHanded" value="90" />
+      <skill id="Polearm" value="90" />
+      <skill id="Riding" value="50" />
+      <skill id="Throwing" value="50" />
+      <skill id="TwoHanded" value="80" />
+      <skill id="Crossbow" value="10" />
+    </skills>
+    <equipmentSet civilian="true">
+      <equipment slot="Item0" id="Item.sturgia_axe_2_t2" />
+      <equipment slot="Item1" id="Item.northern_spear_1_t2" />
+      <equipment slot="Item2" id="Item.northern_round_shield" />
+      <equipment slot="Item3" id="Item.northern_javelin_1_t2" />
+      <equipment slot="Body" id="Item.bandit_leather_water_flask" />
+      <equipment slot="Leg" id="Item.wrapped_shoes" />
+      <equipment slot="Gloves" id="Item.armwraps" />
+      <equipment slot="Cape" id="Item.hood" />
+      <equipment slot="Head" id="Item.wrapped_headcloth" />
+    </equipmentSet>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.ls_yijun" />
+      <upgrade_target id="NPCCharacter.ls_gongshou" />
+    </upgrade_targets>
+  </NPCCharacter>
+
+  <!-- 梁山义军 -->
+
+  <NPCCharacter id="ls_yijun" 
+                default_group="Infantry" 
+                name="{=troop_lsyj}Liangshan Rebels" 
+                level="16" 
+                occupation="Soldier" 
+                civilianTemplate="NPCCharacter.empire_troop_civilian_template_t1"
+                is_basic_troop = "false"
+                culture="Culture.empire">
+    <face>
+      <BodyProperties version="4" age="30.33" weight="0.4454" build="0.545" key="00050004402C0312367324453354621232316505203133023641312273143224028A86240896594500000000000000000000000000000000000000001D043002" />
+      <BodyPropertiesMax version="4" age="45.09" weight="0.6244" build="0.6336" key="001CFC0CC02C3959AD8AA89C9A86CDEC9FCA8BBC8AA4CD775DACED6B7E2F8D4807EEE6780ECADBC9000000000000000000000000000000000000000067D48105" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="80" />
+      <skill id="Bow" value="50" />
+      <skill id="OneHanded" value="120" />
+      <skill id="Polearm" value="120" />
+      <skill id="Riding" value="70" />
+      <skill id="Throwing" value="50" />
+      <skill id="TwoHanded" value="120" />
+      <skill id="Crossbow" value="50" />
+    </skills>
+    <equipmentSet civilian="true">
+      <equipment slot="Item2" id="Item.western_spear_4_t4" />
+      <equipment slot="Item1" id="Item.old_kite_shield" />
+      <equipment slot="Item0" id="Item.vlandia_axe_2_t4" />
+      <equipment slot="Head" id="Item.leather_studdedhelm_over_thinhide" />
+      <equipment slot="Body" id="Item.banded_leather_over_mail" />
+      <equipment slot="Leg" id="Item.rough_tied_boots" />
+      <equipment slot="Gloves" id="Item.reinforced_padded_mitten" />
+      <equipment slot="Cape" id="Item.battania_shoulder_furr" />
+    </equipmentSet>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.ls_huwei" />
+      <upgrade_target id="NPCCharacter.ls_xiaoqi" />
+    </upgrade_targets>
+  </NPCCharacter>
+
+  <!-- 梁山护卫 -->
+
+  <NPCCharacter id="ls_huwei" 
+                default_group="Infantry" 
+                name="{=troop_lshw}Liangshan Guard" 
+                level="21" 
+                occupation="Soldier" 
+                civilianTemplate="NPCCharacter.empire_troop_civilian_template_t1"
+                is_basic_troop = "false"
+                culture="Culture.empire">
+    <face>
+      <BodyProperties version="4" age="30.33" weight="0.4454" build="0.545" key="00050004402C0312367324453354621232316505203133023641312273143224028A86240896594500000000000000000000000000000000000000001D043002" />
+      <BodyPropertiesMax version="4" age="45.09" weight="0.6244" build="0.6336" key="001CFC0CC02C3959AD8AA89C9A86CDEC9FCA8BBC8AA4CD775DACED6B7E2F8D4807EEE6780ECADBC9000000000000000000000000000000000000000067D48105" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="150" />
+      <skill id="Bow" value="60" />
+      <skill id="OneHanded" value="150" />
+      <skill id="Polearm" value="150" />
+      <skill id="Riding" value="70" />
+      <skill id="Throwing" value="60" />
+      <skill id="TwoHanded" value="150" />
+      <skill id="Crossbow" value="60" />
+    </skills>
+    <equipmentSet civilian="true">
+      <equipment slot="Item2" id="Item.western_spear_4_t4" />
+      <equipment slot="Item1" id="Item.old_kite_shield" />
+      <equipment slot="Item0" id="Item.vlandia_axe_2_t4" />
+      <equipment slot="Head" id="Item.leather_studdedhelm_over_thinhide" />
+      <equipment slot="Body" id="Item.banded_leather_over_mail" />
+      <equipment slot="Leg" id="Item.rough_tied_boots" />
+      <equipment slot="Gloves" id="Item.reinforced_padded_mitten" />
+      <equipment slot="Cape" id="Item.battania_shoulder_furr" />
+    </equipmentSet>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.ls_qinwei" />
+    </upgrade_targets>
+  </NPCCharacter>
+
+  <!-- 梁山亲卫 -->
+
+  <NPCCharacter id="ls_qinwei" 
+                default_group="Infantry" 
+                name="{=troop_lsqw}Liangshan Guard Captain" 
+                level="26" 
+                occupation="Soldier" 
+                civilianTemplate="NPCCharacter.empire_troop_civilian_template_t1"
+                is_basic_troop = "false"
+                culture="Culture.empire">
+    <face>
+      <BodyProperties version="4" age="30.33" weight="0.4454" build="0.545" key="00050004402C0312367324453354621232316505203133023641312273143224028A86240896594500000000000000000000000000000000000000001D043002" />
+      <BodyPropertiesMax version="4" age="45.09" weight="0.6244" build="0.6336" key="001CFC0CC02C3959AD8AA89C9A86CDEC9FCA8BBC8AA4CD775DACED6B7E2F8D4807EEE6780ECADBC9000000000000000000000000000000000000000067D48105" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="180" />
+      <skill id="Bow" value="80" />
+      <skill id="OneHanded" value="180" />
+      <skill id="Polearm" value="180" />
+      <skill id="Riding" value="70" />
+      <skill id="Throwing" value="70" />
+      <skill id="TwoHanded" value="180" />
+      <skill id="Crossbow" value="70" />
+    </skills>
+    <equipmentSet civilian="true">
+      <equipment slot="Item2" id="Item.western_spear_4_t4" />
+      <equipment slot="Item1" id="Item.old_kite_shield" />
+      <equipment slot="Item0" id="Item.vlandia_axe_2_t4" />
+      <equipment slot="Head" id="Item.leather_studdedhelm_over_thinhide" />
+      <equipment slot="Body" id="Item.banded_leather_over_mail" />
+      <equipment slot="Leg" id="Item.rough_tied_boots" />
+      <equipment slot="Gloves" id="Item.reinforced_padded_mitten" />
+      <equipment slot="Cape" id="Item.battania_shoulder_furr" />
+    </equipmentSet>
+    <upgrade_targets></upgrade_targets>
+  </NPCCharacter>
+
+  <!-- 梁山骁骑 -->
+
+  <NPCCharacter id="ls_xiaoqi" 
+                default_group="Cavalry" 
+                name="{=troop_lsxq}Liangshan Rider" 
+                level="21" 
+                upgrade_requires="ItemCategory.horse" 
+                occupation="Soldier" 
+                is_basic_troop = "false"
+                culture="Culture.empire">
+    <face>
+      <face_key_template value="NPCCharacter.villager_battania" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="80" />
+      <skill id="Bow" value="50" />
+      <skill id="OneHanded" value="150" />
+      <skill id="Polearm" value="150" />
+      <skill id="Riding" value="150" />
+      <skill id="Throwing" value="50" />
+      <skill id="TwoHanded" value="150" />
+      <skill id="Crossbow" value="50" />
+    </skills>
+    <equipmentSet civilian="true">
+      <equipment slot="Item2" id="Item.western_spear_4_t4" />
+      <equipment slot="Item1" id="Item.battered_kite_shield" />
+      <equipment slot="Item0" id="Item.vlandia_axe_2_t4" />
+      <equipment slot="Head" id="Item.leather_studdedhelm_over_thinhide" />
+      <equipment slot="Body" id="Item.buckled_wildsman_armor" />
+      <equipment slot="Leg" id="Item.highland_leg_wrappings" />
+      <equipment slot="Gloves" id="Item.mail_mitten" />
+      <equipment slot="Cape" id="Item.battania_cloak_furr" />
+      <equipment slot="Horse" id="Item.battania_horse" />
+      <equipment slot="HorseHarness" id="Item.battania_horse_harness" />
+    </equipmentSet>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.ls_jingruixiaoqi" />
+    </upgrade_targets>
+  </NPCCharacter>
+
+  <!-- 梁山精锐骁骑 -->
+
+  <NPCCharacter id="ls_jingruixiaoqi" 
+                default_group="Cavalry" 
+                name="{=troop_lsjrxq}Liangshan Elite Horseman" 
+                level="26" 
+                upgrade_requires="ItemCategory.horse" 
+                occupation="Soldier" 
+                is_basic_troop = "false"
+                culture="Culture.empire">
+    <face>
+      <face_key_template value="NPCCharacter.villager_battania" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="90" />
+      <skill id="Bow" value="70" />
+      <skill id="OneHanded" value="180" />
+      <skill id="Polearm" value="180" />
+      <skill id="Riding" value="180" />
+      <skill id="Throwing" value="50" />
+      <skill id="TwoHanded" value="180" />
+      <skill id="Crossbow" value="50" />
+    </skills>
+    <equipmentSet civilian="true">
+      <equipment slot="Item2" id="Item.western_spear_4_t4" />
+      <equipment slot="Item1" id="Item.battered_kite_shield" />
+      <equipment slot="Item0" id="Item.vlandia_axe_2_t4" />
+      <equipment slot="Head" id="Item.leather_studdedhelm_over_thinhide" />
+      <equipment slot="Body" id="Item.buckled_wildsman_armor" />
+      <equipment slot="Leg" id="Item.highland_leg_wrappings" />
+      <equipment slot="Gloves" id="Item.mail_mitten" />
+      <equipment slot="Cape" id="Item.battania_cloak_furr" />
+      <equipment slot="Horse" id="Item.battania_horse" />
+      <equipment slot="HorseHarness" id="Item.battania_horse_harness" />
+    </equipmentSet>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.ls_tianxingxiaoqi" />
+    </upgrade_targets>
+  </NPCCharacter>
+
+  <!-- 梁山天行骁骑 -->
+
+  <NPCCharacter id="ls_tianxingxiaoqi" 
+                default_group="Cavalry" 
+                name="{=troop_lstxxq}Liangshan Sky Raider" 
+                level="31" 
+                upgrade_requires="ItemCategory.war_horse" 
+                occupation="Soldier" 
+                is_basic_troop = "false"
+                culture="Culture.empire">
+    <face>
+      <face_key_template value="NPCCharacter.villager_battania" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="130" />
+      <skill id="Bow" value="90" />
+      <skill id="OneHanded" value="210" />
+      <skill id="Polearm" value="210" />
+      <skill id="Riding" value="215" />
+      <skill id="Throwing" value="50" />
+      <skill id="TwoHanded" value="190" />
+      <skill id="Crossbow" value="50" />
+    </skills>
+    <equipmentSet civilian="true">
+      <equipment slot="Item2" id="Item.western_spear_4_t4" />
+      <equipment slot="Item1" id="Item.battered_kite_shield" />
+      <equipment slot="Item0" id="Item.vlandia_axe_2_t4" />
+      <equipment slot="Head" id="Item.leather_studdedhelm_over_thinhide" />
+      <equipment slot="Body" id="Item.buckled_wildsman_armor" />
+      <equipment slot="Leg" id="Item.highland_leg_wrappings" />
+      <equipment slot="Gloves" id="Item.mail_mitten" />
+      <equipment slot="Cape" id="Item.battania_cloak_furr" />
+      <equipment slot="Horse" id="Item.battania_horse" />
+      <equipment slot="HorseHarness" id="Item.battania_horse_harness" />
+    </equipmentSet>
+    <upgrade_targets></upgrade_targets>
+  </NPCCharacter>
+
+  <!-- 梁山弓手 -->
+
+  <NPCCharacter id="ls_gongshou" 
+                default_group="Ranged" 
+                name="{=troop_lsgs}Liangshan Bowman" 
+                level="16" 
+                occupation="Soldier" 
+                is_basic_troop = "false"
+                culture="Culture.empire">
+    <face>
+      <face_key_template value="NPCCharacter.villager_vlandia" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="100" />
+      <skill id="Bow" value="120" />
+      <skill id="OneHanded" value="80" />
+      <skill id="Polearm" value="60" />
+      <skill id="Riding" value="70" />
+      <skill id="Throwing" value="120" />
+      <skill id="TwoHanded" value="70" />
+      <skill id="Crossbow" value="70" />
+    </skills>
+    <equipmentSet civilian="true">
+      <equipment slot="Item0" id="Item.glen_ranger_bow" />
+      <equipment slot="Item1" id="Item.default_arrows" />
+      <equipment slot="Item2" id="Item.battania_axe_1_t2" />
+      <equipment slot="Item3" id="Item.default_arrows" />
+      <equipment slot="Body" id="Item.battania_woodland_outfit" />
+      <equipment slot="Leg" id="Item.ragged_boots" />
+      <equipment slot="Gloves" id="Item.guarded_armwraps" />
+      <equipment slot="Head" id="Item.pilgrim_hood" />
+    </equipmentSet>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.ls_jingruigongshou" />
+    </upgrade_targets>
+  </NPCCharacter>
+
+  <!-- 梁山精锐弓手 -->
+  
+  <NPCCharacter id="ls_jingruigongshou" 
+                default_group="Ranged" 
+                name="{=troop_lsjrgs}Liangshan Trained Archer" 
+                level="21" 
+                occupation="Soldier" 
+                is_basic_troop = "false"
+                culture="Culture.empire">
+    <face>
+      <face_key_template value="NPCCharacter.villager_vlandia" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="110" />
+      <skill id="Bow" value="150" />
+      <skill id="OneHanded" value="90" />
+      <skill id="Polearm" value="60" />
+      <skill id="Riding" value="70" />
+      <skill id="Throwing" value="100" />
+      <skill id="TwoHanded" value="90" />
+      <skill id="Crossbow" value="70" />
+    </skills>
+    <equipmentSet civilian="true">
+      <equipment slot="Item0" id="Item.glen_ranger_bow" />
+      <equipment slot="Item1" id="Item.default_arrows" />
+      <equipment slot="Item2" id="Item.battania_axe_1_t2" />
+      <equipment slot="Item3" id="Item.default_arrows" />
+      <equipment slot="Body" id="Item.battania_woodland_outfit" />
+      <equipment slot="Leg" id="Item.ragged_boots" />
+      <equipment slot="Gloves" id="Item.guarded_armwraps" />
+      <equipment slot="Head" id="Item.pilgrim_hood" />
+    </equipmentSet>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.ls_tianxinggongshou" />
+    </upgrade_targets>
+  </NPCCharacter>
+
+  <!-- 梁山天行弓手 -->
+  
+  <NPCCharacter id="ls_tianxinggongshou" 
+                default_group="Ranged" 
+                name="{=troop_lstxgs}Liangshan Elite Archer" 
+                level="26" 
+                occupation="Soldier" 
+                is_basic_troop = "false"
+                culture="Culture.empire">
+    <face>
+      <face_key_template value="NPCCharacter.villager_vlandia" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="120" />
+      <skill id="Bow" value="180" />
+      <skill id="OneHanded" value="100" />
+      <skill id="Polearm" value="60" />
+      <skill id="Riding" value="70" />
+      <skill id="Throwing" value="150" />
+      <skill id="TwoHanded" value="100" />
+      <skill id="Crossbow" value="100" />
+    </skills>
+    <equipmentSet civilian="true">
+      <equipment slot="Item0" id="Item.glen_ranger_bow" />
+      <equipment slot="Item1" id="Item.default_arrows" />
+      <equipment slot="Item2" id="Item.battania_axe_1_t2" />
+      <equipment slot="Item3" id="Item.default_arrows" />
+      <equipment slot="Body" id="Item.battania_woodland_outfit" />
+      <equipment slot="Leg" id="Item.ragged_boots" />
+      <equipment slot="Gloves" id="Item.guarded_armwraps" />
+      <equipment slot="Head" id="Item.pilgrim_hood" />
+    </equipmentSet>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.ls_tianxingbingzhang" />
+    </upgrade_targets>
+  </NPCCharacter>
+
+  <!-- 梁山天行兵长 -->
+  
+  <NPCCharacter id="ls_tianxingbingzhang" 
+                default_group="Ranged" 
+                name="{=troop_lstxbz}Liangshan Elite Archer Captain" 
+                level="31" 
+                occupation="Soldier" 
+                is_basic_troop = "false"
+                culture="Culture.empire">
+    <face>
+      <face_key_template value="NPCCharacter.villager_vlandia" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="160" />
+      <skill id="Bow" value="210" />
+      <skill id="OneHanded" value="110" />
+      <skill id="Polearm" value="70" />
+      <skill id="Riding" value="70" />
+      <skill id="Throwing" value="210" />
+      <skill id="TwoHanded" value="110" />
+      <skill id="Crossbow" value="150" />
+    </skills>
+    <equipmentSet civilian="true">
+      <equipment slot="Item0" id="Item.glen_ranger_bow" />
+      <equipment slot="Item1" id="Item.default_arrows" />
+      <equipment slot="Item2" id="Item.battania_axe_1_t2" />
+      <equipment slot="Item3" id="Item.default_arrows" />
+      <equipment slot="Body" id="Item.battania_woodland_outfit" />
+      <equipment slot="Leg" id="Item.ragged_boots" />
+      <equipment slot="Gloves" id="Item.guarded_armwraps" />
+      <equipment slot="Head" id="Item.pilgrim_hood" />
+    </equipmentSet>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.ls_tianxinggongwei" />
+    </upgrade_targets>
+  </NPCCharacter>
+
+  <!-- 梁山天行弓卫 -->
+  
+  <NPCCharacter id="ls_tianxinggongwei" 
+                default_group="Ranged" 
+                name="{=troop_lstxgw}Liangshan Guardian Sniper" 
+                level="36" 
+                occupation="Soldier" 
+                is_basic_troop = "false"
+                culture="Culture.empire">
+    <face>
+      <face_key_template value="NPCCharacter.villager_vlandia" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="220" />
+      <skill id="Bow" value="240" />
+      <skill id="OneHanded" value="120" />
+      <skill id="Polearm" value="100" />
+      <skill id="Riding" value="70" />
+      <skill id="Throwing" value="180" />
+      <skill id="TwoHanded" value="120" />
+      <skill id="Crossbow" value="240" />
+    </skills>
+    <equipmentSet civilian="true">
+      <equipment slot="Item0" id="Item.glen_ranger_bow" />
+      <equipment slot="Item1" id="Item.default_arrows" />
+      <equipment slot="Item2" id="Item.battania_axe_1_t2" />
+      <equipment slot="Item3" id="Item.default_arrows" />
+      <equipment slot="Body" id="Item.battania_woodland_outfit" />
+      <equipment slot="Leg" id="Item.ragged_boots" />
+      <equipment slot="Gloves" id="Item.guarded_armwraps" />
+      <equipment slot="Head" id="Item.pilgrim_hood" />
+    </equipmentSet>
+    <upgrade_targets></upgrade_targets>
+  </NPCCharacter>
+  <!--Boss character end-->
+</NPCCharacters>
